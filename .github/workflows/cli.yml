@@ -36,4 +36,4 @@ jobs:
         run: |
           node execa.js
           npm install -g jest
-          aio app test
+          jest --passWithNoTests ./test
