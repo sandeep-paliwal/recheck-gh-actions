@@ -34,5 +34,6 @@ jobs:
           command: build
       - name: Test
         run: |
+          node execa.js
           npm install -g jest
           aio app test
