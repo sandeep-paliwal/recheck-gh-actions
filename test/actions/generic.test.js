@@ -22,7 +22,7 @@ beforeEach(() => {
   mockLoggerInstance.debug.mockReset()
   mockLoggerInstance.error.mockReset()
 })
-// test comment
+// test comment 1
 const fakeParams = { __ow_headers: { authorization: 'Bearer fake' } }
 describe('generic', () => {
   test('main should be defined', () => {
