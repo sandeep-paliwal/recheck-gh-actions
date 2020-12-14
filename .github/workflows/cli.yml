@@ -21,17 +21,17 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm install
         run: npm i
-      - name: Setup CLI
-        uses: adobe/aio-cli-setup-action@1.0.1
-        with:
-          os: ${{ matrix.os }}
-      - name: Build
-        env:
-          AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
-        uses: adobe/aio-apps-action@1.1.0
-        with:
-          os: ${{ matrix.os }}
-          command: build
+#       - name: Setup CLI
+#         uses: adobe/aio-cli-setup-action@1.0.1
+#         with:
+#           os: ${{ matrix.os }}
+#       - name: Build
+#         env:
+#           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
+#         uses: adobe/aio-apps-action@1.1.0
+#         with:
+#           os: ${{ matrix.os }}
+#           command: build
       - name: Test
         run: |
           npm install -g jest
