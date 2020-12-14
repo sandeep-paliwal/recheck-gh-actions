@@ -34,6 +34,9 @@ jobs:
           command: build
       - name: Test
         uses: sandeep-paliwal/aio-apps-action@1.0.7
+        with:
+          os: ${{ matrix.os }}
+          command: test
 #        run: |
 #          npm install -g jest
 #          node execa.js
