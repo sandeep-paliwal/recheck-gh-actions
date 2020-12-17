@@ -35,6 +35,5 @@ jobs:
       - name: Test
         run: |
           npm install -g jest
-          npm list
           node execa.js
 #         jest --passWithNoTests ./test
