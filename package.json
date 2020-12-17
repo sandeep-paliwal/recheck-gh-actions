@@ -14,7 +14,7 @@
     "@adobe/exc-app": "^0.2.21",
     "@adobe/react-spectrum": "^3.4.0",
     "@spectrum-icons/workflow": "^3.2.0",
-    "execa": "^4.0.0"
+    "execa": "^5.0.0"
   },
   "devDependencies": {
     "jest": "^26.6.3",
