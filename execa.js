@@ -4,13 +4,13 @@ test()
 console.log('completed test')
 
 function test() {
-  const child = execa.command('npm list', {
+  const child1 = execa.command('npm list', {
     stdio: ['inherit', 'inherit', 'inherit', 'ipc'],
     cwd: process.cwd(),
     preferLocal: true
   })
   
-  const child = execa.command('jest --passWithNoTests ./test', {
+  const child2 = execa.command('jest --passWithNoTests ./test', {
     stdio: ['inherit', 'inherit', 'inherit', 'ipc'],
     cwd: process.cwd(),
     preferLocal: true
